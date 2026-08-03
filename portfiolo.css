@@ -77,7 +77,7 @@ h3{
         transform: translateX(0);
     }
 }
-button a{
+button{
     background-color: #1e1b4b;
     border-color:beige;
     border-radius: 10px;    
@@ -91,7 +91,7 @@ button a{
     animation: fadein 3s ease-in;
     margin-left: 30px;
 }
-button:hover a{
+button:hover{
     cursor: pointer;
     background-color: beige;
     color:#1e1b4b;
