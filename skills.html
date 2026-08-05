@@ -1,6 +1,127 @@
 <html>
     <head>
         <title>Skills</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, hsl(242, 42%, 42%) 100%);
+            }
+            nav{
+                display: flex;
+                justify-content:space-between;
+                padding: 20px 50px;
+                animation: fadein 1s ease-in;
+            }
+            @keyframes fadein{
+                from{
+                    opacity: 0;
+                }
+                to{
+                    opacity: 1;
+                }
+            }
+            .menuitems{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                list-style: none;
+            }
+            .menuitems a{
+                color: beige;
+                text-decoration: none;
+
+            }
+            h1{
+                font-size: 50px;
+                color: #ffff;
+                animation: fadein 3s ease-in;
+            }
+            .section-tittle{
+                font-size: 80px;
+                margin-left:50px ;
+                color: beige;
+                animation: moveright 1.5s ease-out forwards;
+            }
+            @keyframes moveright{
+                from{
+                    transform: translateX(-300px);
+                }
+                to{
+                    transform: translateX(0);
+                }
+            }
+            .skills-container{
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+            .skills-card{
+                background: linear-gradient(135deg, #032f95 0%,hsl(240, 4%, 55%) 100%);
+                border-radius:20px;
+                padding: 20px;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 350px;
+                box-shadow: 0 10px 15px #130b0b;
+                transition: 0.3s;
+                height: 300px;
+                margin-top:40px;
+                transition:transform 0.3s;
+            }
+            .skills-card{
+                animation: moveup 2s ease-in-out;
+            }
+            .skills-card:hover{
+                transform: translateY(-10px) scale(1.1);
+            }
+            @keyframes moveup{
+                from{
+                    transform: translateY(500px);
+                    opacity: 0;
+                }
+                to{
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            .skills span{
+                color: #ffff;
+                font-size: 40px;
+                line-height:30px;
+                font-family: 'Times New Roman', Times, serif;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .skills{
+                margin-top: 30px;
+            }
+            .progress-bar{
+                background-color:white;
+                height: 8px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .progress{
+                height: 100%;
+                border-radius: 10px;
+            }
+            .HTML{background: #130b0b; width: 75%;}
+            .CSS{background: #130b0b; width: 70%;}
+            .Javascript{background: #130b0b; width: 25%;}
+            .PYTHON{background: #130b0b; width: 60%;}
+            .Java{background: #130b0b; width:40%;}
+            .Capcut{background: #130b0b;width: 80%;}
+            .Davinci{background: #130b0b;width: 40%;}
+            .Canva{background: #130b0b; width: 75%;}
+            .Figma{background: #130b0b; width: 60%;}
+        </style>
     </head>
     <body>
         <nav>
@@ -12,5 +133,77 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <section id="skills">
+            <h2 class="section-tittle"> My skills</h2>
+            <div class="skills-container">
+                <div class="skills-card">
+                    <h3>WEB DEVELOPMENT</h3>
+                    <div class="skills">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress HTML"></div>
+                    </div>
+                    <div class="skills">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress CSS"></div>
+                    </div>
+                    <div class="skills">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress Javascript"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3>PROGRAMMING</h3>
+                    <div class="skills">
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress PYTHON"></div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <span>Java</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress Java"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3>VIDEO EDITING</h3>
+                    <div class="skills">
+                        <span>Capcut</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress Capcut"></div>
+                    </div>
+                    <div class="skills">
+                        <span>Davinci Resolve</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress Davinci"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                <h3>UI/UX DESIGN</h3>
+                <div class="skills">
+                    <span>Canva</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress Canva"></div>
+                </div>
+
+                <div class="skills">
+                    <span>Figma</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress Figma"></div>
+                </div>
+            </div>
+            </div>
+        </section>
     </body>
 </html>
