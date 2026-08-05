@@ -1,1 +1,154 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>Contact</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html,body{
+            width:100%;
+            height:100%;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 50%,hsl(242,42%,42%) 100%);
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            padding:20px 50px;
+            animation:fadein 1s ease-in;
+        }
+
+        @keyframes fadein{
+            from{opacity:0;}
+            to{opacity:1;}
+        }
+
+        h1{
+            font-size:50px;
+        }
+
+        .menu-items{
+            display:flex;
+            align-items:center;
+            gap:30px;
+            list-style:none;
+        }
+
+        .menu-items a{
+            text-decoration:none;
+            color:beige;
+        }
+
+        #Contact{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin-top:40px;
+        }
+        @keyframes moveup{
+            from{
+                transform: translateY(500px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h2{
+            font-size:45px;
+            margin-bottom:30px;
+        }
+
+        .items-card{
+            width:450px;
+            background-color: #c2bfca;
+            color:#222;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.3);
+            animation: moveup 2s ease-in forwards;
+        }
+
+        .items{
+            display:block;
+            margin:18px 0;
+            font-size:18px;
+            line-height: 20px;
+            color: rgb(54, 4, 7);
+        }
+
+        .items a{
+            text-decoration:none;
+            color:#0f172a;
+            margin-left:10px;
+            font-weight:bold;
+            background-color: aliceblue;
+            padding: 5px;
+            border-radius: 10px;
+            transition: color 0.3s;
+        }
+
+        .items a:hover{
+            color:aliceblue;
+            background-color: #0f172a;
+        }
+        h2{
+            animation: fadein 1s ease-in;
+        }
+        fadein{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Portfolio</h1>
+
+    <ul class="menu-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about me.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<section id="Contact">
+    <h2>Contact</h2>
+
+    <div class="items-card">
+
+        <span class="items">
+            <strong>Email:</strong>
+            satyanaredla73@gmail.com
+            <a href="mailto:satyanaredla73@gmail.com">Email</a>
+        </span>
+
+        <span class="items">
+            <strong>LinkedIn:</strong>
+            Satya Narayana
+            <a href="https://www.linkedin.com/in/satya-narayana-naredla-3b21b5377" target="_blank">
+                Open
+            </a>
+        </span>
+
+    </div>
+
+</section>
+
+</body>
+</html>
